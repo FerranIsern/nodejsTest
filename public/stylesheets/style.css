@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: normal 13px Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.table {
+  border: solid 1px rgb(43, 38, 88);
+  border-collapse: collapse;
+  border-spacing: 0;
+  
+}
+.table th {
+  background-color: rgb(43, 38, 88);
+  border: solid 1px rgb(43, 38, 88);
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+.table td {
+  border: solid 1px rgb(43, 38, 88);
+  color: #333;
+  padding: 10px;
+}
