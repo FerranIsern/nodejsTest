@@ -1,0 +1,22 @@
+<h3>User Data by Policy</h3>
+
+<form action="/userOfPolicy" method="get">
+    <input type="text" name="id" value="{{policyId}}">
+    <button type="submit"> Search policy Id</button>
+</form>
+{{#if client}}
+<table class="table">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>role</th>
+    </tr>
+    <tr>
+        <td>{{client.id}}</td>
+        <td>{{client.name}}</td>
+        <td>{{client.email}}</td>
+        <td>{{client.role}}</td>
+    </tr>
+</table>
+{{/if}}

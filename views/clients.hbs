@@ -1,0 +1,35 @@
+
+{{#ifEquals sort "id"}}
+<h3>User Data by ID</h3>
+<form action="/clients" method="get">
+    <input type="text" name="id" value="{{id}}">
+    <input hidden type="text" name="sort" value="id">
+    <button type="submit"> Search client ID</button>
+</form>
+{{/ifEquals}}
+
+{{#ifEquals sort "name"}}
+<h3>User Data by Name</h3>
+<form action="/clients" method="get">
+    <input type="text" name="name" value="{{name}}">
+    <input hidden type="text" name="sort" value="name">
+    <button type="submit"> Search client Name</button>
+</form>
+{{/ifEquals}}
+
+<table class="table">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>role</th>
+    </tr>
+    {{#each clients}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{email}}</td>
+        <td>{{role}}</td>
+    </tr>
+    {{/each}}
+</table>

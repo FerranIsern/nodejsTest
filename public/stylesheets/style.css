@@ -8,10 +8,10 @@ a {
 }
 
 .table {
+  margin-top: 15px;
   border: solid 1px rgb(43, 38, 88);
   border-collapse: collapse;
   border-spacing: 0;
-  
 }
 .table th {
   background-color: rgb(43, 38, 88);

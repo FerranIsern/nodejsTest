@@ -1,0 +1,28 @@
+<h3>Policies by username</h3>
+
+<form action="/policiesByClient" method="get">
+    <input type="text" name="name" value="{{name}}">
+    <button type="submit"> Search Name</button>
+</form>
+{{#if name}}
+<table class="table">
+    <tr>
+        <th>id</th>
+        <th>amountInsured</th>
+        <th>email</th>
+        <th>inceptionDate</th>
+        <th>installmentPayment</th>
+        <th>clientId</th>
+    </tr>
+    {{#each policies}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{amountInsured}}</td>
+        <td>{{email}}</td>
+        <td>{{inceptionDate}}</td>
+        <td>{{installmentPayment}}</td>
+        <td>{{clientId}}</td>
+    </tr>
+    {{/each}}
+</table>
+{{/if}}
